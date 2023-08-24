@@ -11,43 +11,70 @@
 <body>
     <header>
     <img src="./4food.png" class="logo-inicio">
-        <h1 class="nome" >4Food</h1>
+       <div class="container">        
+            <h4 id="pagina" onclick="sobre()">Sobre nós</h4>
+            <h4 id="servico" onclick="servico()">Nossos Serviços</h4>
+            <h4 id="trabalhe" onclick="trabalhe()">Trabalhe Conosco</h4>
+        </div>
     </header>
     
-    <section>
-        <div class="container">
-            <div id="item1">Página Inicial</div>
-            <div id="item2">Programe suas refeições</div>
-            <div id="item3">Compre sem sair de casa</div>
-            </div>
+   <section class="mercado">
+    <img src="./4food.png" class="logo">
+    <p id="frase2"> <b> 4FOOD </b> É A INOVAÇÃO QUE VOCÊ PRECISA!</p>
+        <h3 id="compre">Compre sem sair de casa!</h3>
+        <p id="frase4">Agora ficou fácil de comprar. Aqui você adquire seus produtos 
+            sem sair de casa. É só escolher e adicionar ao carrinho. 
+            Agilidade e segurança para sua compra. Somos uma grande rede de 
+            supermercados e criamos um sistema de compras de supermercado online. 
+            Você pode fazer suas compras sem sair de casa, sem perder tempo, 
+            sem precisar procurar vagas no estacionamento, facilitando o seu 
+            dia-a-dia. Prático, rápido e seguro!</p>
+            <br/>
+            <br/>
+            <img src="promo 1.png" class="promo1">
+            <img src="promo 2.png" class="promo2">
+            <br/>
+            <button type="submit" id="botao1" onclick="botaoComprar(event)">Comprar</button>
     </section>
-     
     <section>
-        <h2 id="frase1">Compre sem sair de casa!</h2>
-        <p id="frase4">Agora ficou fácil de comprar. Aqui você adquire seus produtos sem sair de casa. 
-            É só escolher e adicionar ao carrinho. Agilidade e segurança para sua compra.</p>
-        <p id="frase2">4Food é a inovação que você precisa!</p>
-        <p id="frase3">Somos uma grande rede de supermercados e criamos um sistema de compras de supermercado online.
-            Você pode fazer suas compras sem sair de casa, sem perder tempo, sem precisar procurar vagas 
-            no estacionamento, facilitando o seu dia-a-dia. Prático, rápido e seguro!</p>
-            <button id="botao1">Clique aqui para iniciar suas compras.</button>
-    </section>
-    <section>
-        <h2 id="frase5">Programe a sua entrega e não fique sem suas refeições!</h2>
-        <p id="frase6">Com o nosso programe e poupe, você não fica sem suas refeições.
+        <br/>
+        <br/>
+        <h3 id="frase5">Programe a sua entrega e não fique sem suas refeições!</h3>
+        <p id="frase6">Com o nosso programe e poupe, você não fica sem suas refeições. 
             Aqui você escolhe seu cardápio semanal e entregamos para você! 
             Sem estresse e sem perder tempo na cozinha.</p>
+            <br/>
             <img src="marmita.webp" class="logo-marmita">
-            <button id="botao2">Clique aqui para selecionar seu cardápio e programar suas entregas.</button>
+            <br/>
+            <button id="botao2" type="submit" onclick="botaoEscolherCardapio(event)">Escolher o Cardápio</button>
     </section>
 
     
 </body>
-<footer class="container1"> 
-    <a id="localizacao">Quatá-SP</a>
-    <a>Contato</a>
-    <a id="rede-social1">Instagram</a>
-    <a id="rede-social2">Linkedin</a>
+<br/>
+<br/>    
+<form action="#">Preencha com seu e-mail e receba nossas promoções!
+    <br/>    
+    <br/>
+    <label>E-mail:
+        <input type="text" name="email" id="email">
+    </label>
+    <br/>
+    <br/>
+    <buttom id="botao3" type="submit" onclick="receberFormulario(event)">
+        Enviar</buttom>
+    <br/>
+    <br/>
+</form>
+
+<footer class="container1">         
+    <a id="localizacao" onclick="local()">Quatá-SP</a>
+    <a id="contato" onclick="contato()">Contato</a>
+    <a href="https://www.instagram.com" id="rede-social1" >
+        <img src="insta.png">Instagram</a>
+    <a href="https://br.linkedin.com" id="rede-social2" >
+        <img src="linkedin.png">Linkedin</a>
+    
 </footer>
 
 
